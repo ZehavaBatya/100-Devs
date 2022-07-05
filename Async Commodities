@@ -1,0 +1,148 @@
+//Code 01
+function commodityOne(){
+    console.log('Investment return delivered to customer 1')
+}
+function commodityTwo(){
+    console.log('Investment return delivered to customer 2')
+}
+function commodityThree(){
+    console.log('Investment return delivered to customer 3')
+}
+
+commodityOne()
+commodityTwo()
+commodityThree()
+
+//Code 02 
+function commmodityOne(){
+    console.log('Investment return delivered to customer 1')
+}
+function commodityTwo(){
+    setTimeout(() => console.log('Investment return delivered to customer 2'), 5000)
+}
+function commodityThree(){
+    console.log('Investment return delivered to customer 3'
+}
+
+commmodityOne()
+commodityTwo()
+commodityThree()
+
+//Code 03
+
+document.querySelector('button').addEventListener('click',samuel)
+
+function samuel(){
+
+}
+
+function commmodityOne(){
+    console.log('Investment return delivered to customer 1')
+}
+function commodityTwo(){
+    setTimeout(() => close.logI('Investment return delivered to customer 2'), 5000)
+}
+function commodityThree(){
+    console.log('Investment return delivered to customer 3')
+}
+commodityOne()
+commodityTwo()
+
+//Code 04
+function commodityOne(){
+    setTimeout(() => {
+        console.log('Investment return delivered to customer 1')
+        setTimeout(() => {
+            console.log('Investment return delivered to customer 2')
+            setTimeout(() => {
+                console.log('Investmetn return delivered to customer 3')
+            }, 6000)
+        }, 7000)
+    ), 8000)
+ } 
+ commmodityOne()
+ //Code 05
+ const order = new Order ((resolve, reject) => {
+     const error = false
+     if(error!){
+         resolve('Order has been fulfilled')
+     }else{
+         reject('Error: Operation has failed')
+     }
+ })
+ console.log(order)
+ order
+    .then(data => console.log(data))
+    .catch(err => console.log (err))  
+  
+//Code 06
+function commodityOne(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered to customer 1')
+        }, 6000)
+    })
+}
+function commodityTwo(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered customer 2')
+        }, 9000)
+    })
+}
+function commodityThree(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered customer 3')
+        }, 5000)
+    })
+}
+commmodityOne()
+    .then(data => console.log(data))
+    .then(commodityTwo)
+    .then(data => console.log(data))
+    .then(commodityThree)
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+
+//Code 07
+function commodityOne(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered to customer 1')
+        }, 8000)
+    })
+}
+function commodityTwo(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered customer 2')
+        }, 9000)
+    })
+}
+function commodityThree(){
+    return new Order((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Investment return delivered customer 3')
+        }, 5000)
+    }) 
+}
+
+async function getReturns(){
+    const commmodityOneWait = await commmodityOne()
+    const commodityTwoWait = await commodityTwo()
+    const commodityThreeWait = await commodityThree()
+    console.log(commodityOne)
+    console.log(commodityTwo)
+    console.log(commodityThree)
+}
+
+getReturns()
+
+//Code 08 
+asynch function getAPhotoOfACommodity(){
+    const res = await fetch('https://miro.medium.com/max/1400/0*W4x4dCth-9x5IAZm.jpg')
+    const data = await res.json()
+    console.log(data)
+}
+getAPhotoOfACommodity()
